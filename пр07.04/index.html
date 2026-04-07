@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Теми сайту</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Налаштування теми</h1>
+
+<div class="controls">
+  <button onclick="setTheme('light')">Світла</button>
+  <button onclick="setTheme('dark')">Темна</button>
+  <button onclick="setTheme('custom')">Кастомна</button>
+</div>
+
+<div class="custom-settings">
+  <h3>Власні кольори</h3>
+  <label>
+    Фон:
+    <input type="color" id="bgColor">
+  </label>
+  <label>
+    Текст:
+    <input type="color" id="textColor">
+  </label>
+  <button onclick="saveCustomTheme()">Зберегти</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
